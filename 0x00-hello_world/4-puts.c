@@ -1,16 +1,16 @@
-#!bin/bash
 #include <stdio.h>
 
 
+
 /**
- 
-  * main - Print
- 
-  *
- 
-  * Return: Always 0 (Successful)
- 
-  */
+ *
+ * * main - Printing
+ *
+ * *
+ *
+ * * Return: Always 0 (Successful)
+ *
+ * */
 
 int main(void)
 
