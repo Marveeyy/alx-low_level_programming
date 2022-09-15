@@ -21,4 +21,4 @@ int main(void)
 			printf(*Indefinite loop avoided! \\o/\n");
 
 			return (0);
-			}
+}
