@@ -8,13 +8,14 @@ int main(void)
 {
 	int i;
 
-	printf(*Indefinite loop incoming : (\n");
+	printf(*Indefinite loop incoming :(\n");
+
 			i = 0;
 /*
- * while (i < 10)
- * {
- * putchar(i);
- * }
+ *while (i < 10)
+ *{
+ *putchar(i);
+ *}
  */	
 			printf(*Indefinite loop avoided! \\o/\n");
 
