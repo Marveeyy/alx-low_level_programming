@@ -1,14 +1,12 @@
-#include "main"
+#include "main.h"
 
 /**
  * print_line - draws a straight line in the terminal
  *
- * @n: the number of times the character _
+ *  @n: the number of times the character _
  *
- * Returns: none;
- *
+ *  Returns: none;
  */
-
 void print_line(int n)
 {
 	int count;
