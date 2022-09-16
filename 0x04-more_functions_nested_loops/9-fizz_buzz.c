@@ -1,41 +1,38 @@
 #include <stdio.h>
 
 /**
- * maiin - program that prints either number
- * or izz or buzz or fizzBuzz 
+ * main - prints Fizz for int divisible by 3 and Buzz for 5
  *
- * Return: returns 0
+ * Return: int
  */
 
 int main(void)
 {
-	int num = 1;
+	int i;
 
-	while (num++ < 100)
+	for (i = 1; i <= 100; i++)
 	{
-		if ((num % 3 == 0) && (num % 5 == 0))
+		if (i % 3 == 0 && i % 5 != 0)
 		{
-			printf("FizzBuzz ");}
-		else if
-			((num % 3) == 0)
-			{
-				printf("Fizz");
-			}
-		else if
-			((num % 5) == 0)
-			{
-				if
-					(num != 100)
-					{
-						printf("Buzz");
-					}
-			}
+			printf("Fizz");
+		}
+		else if (i % 3 != 0 && i % 5 == 0)
+		{
+			printf("Buzz");
+		}
+		else if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf("FizzBuzz");
+		}
 		else
 		{
-			printf("%d ", num)'
+			printf("%d", i);
 		}
+		if (i != 100)
+			putchar(' ');
+		else
+			putchar('\n');
 	}
-	printf("\n");
-
 	return (0);
 }
+
