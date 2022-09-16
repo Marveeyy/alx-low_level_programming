@@ -1,30 +1,25 @@
 #include <stdio.h>
-/*8
- * main - prints the largest prime factor of a number
- *
- * Return: returns 0
+
+/**
+ * main -  checks for checks for a digit (0 through 9)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	long number = 612852475143;
-	int inc;
+	long x, y;
 
-	while (inc++ < number / 2)
+	x = 612852475143;
+
+	for (y = 2; x > y; y++)
 	{
-		if (number % inc == 0)
+		while (x % y == 0)
 		{
-			number /= 2;
-			continue;
-		}
-
-		for (inc = 3; inc < number / 2; inc += 2)
-		{
-			if (number % inc == 0)
-
-				number /= inc;
+			x = x / y;
 		}
 	}
-	printf("%ld\n", number);
+	printf("%lu", y);
+	putchar('\n');
 	return (0);
 }
+
