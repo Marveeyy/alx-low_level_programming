@@ -25,7 +25,7 @@ int main(void)
 			break;
 		b += a;
 		c++;
-		printf("%c", i);
+		printf("%c", a);
 	}
 	printf("%c\n", (2772 - b));
 	return (0);
