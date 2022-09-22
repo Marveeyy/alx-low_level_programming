@@ -8,18 +8,20 @@
  * Return: pointer to the resulting string
  */
 
-char _*strncpy(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 
 {
-	int a;
+	int index;
 
-	for (a = 0; a < n && *(src + a); a++)
+	for (index = 0; index < n && src[index] != '\0' ; index++)
 	{
-		*(dest + a) = *(src + a);
+		dest[index] = src[index];
 	}
-	for (; a < n; a++)
+	for (; index  < n; index++)
 	{
-		*(dest + a) = '\0';
+	dest[index] = '\0';
 	}
 	return (dest);
 }
+
+
