@@ -12,6 +12,7 @@ int _strcmp(char *s1, char *s2)
 {
 	int i = 0;
 
+
 	while (s1[i] != '\0' && s2[i] != '\0')
 	{
 		if (s1[i] != s2[i])
@@ -45,6 +46,7 @@ int _strlen(char *s, int i)
 /**
  * words - Count the numbers of words.
  * @str: String.
+ *
  * Return: Number of words.
  */
 
@@ -92,6 +94,7 @@ char *_strcpy(char *s, int i, char *tmp)
 /**
  * strtow - Extract all the words from an string
  * @str: String
+ *
  * Return: Array of words
  */
 
